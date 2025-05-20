@@ -37,12 +37,19 @@ Emoji
 URLExtract
 
 📁 Project Structure
+
 📂 whatsapp-chat-analyzer/
+
 ├── app.py                  # Main Streamlit application
+
 ├── preprocessor.py         # Chat cleaning and preprocessing
+
 ├── helper.py               # All analytical and visualization functions
+
 ├── stop_hinglish.txt       # Stopword file for word cloud filtering
+
 ├── requirements.txt        # Dependencies
+
 └── README.md               # Project overview and instructions
 
 📸 Screenshots
