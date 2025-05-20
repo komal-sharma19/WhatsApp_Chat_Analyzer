@@ -2,7 +2,7 @@
 A powerful and interactive web application built using Streamlit that allows users to analyze their WhatsApp chat history and gain detailed insights into messaging patterns, word usage, media sharing, emojis, and more.
 
 
-#🚀 Features
+# Features
 📥 Upload and parse exported WhatsApp chat .txt files
 
 👤 Analyze chat statistics for individual users or overall group
@@ -21,7 +21,7 @@ A powerful and interactive web application built using Streamlit that allows use
 
 😂 Emoji analysis with pie chart and table
 
-🛠️ Technologies Used:
+# Technologies Used:
 
 Python
 
@@ -37,7 +37,7 @@ Emoji
 
 URLExtract
 
-📁 Project Structure
+# Project Structure
 
 📂 whatsapp-chat-analyzer/
 
@@ -53,9 +53,9 @@ URLExtract
 
 └── README.md               # Project overview and instructions
 
-📦 Setup Instructions
+## Setup Instructions
 
-Clone the repository:
+# Clone the repository:
 
 git clone https://github.com/your-username/whatsapp-chat-analyzer.git
 
@@ -75,7 +75,7 @@ Export the chat from WhatsApp (without media)
 
 Upload the .txt file using the sidebar in the app
 
-📋 Exporting WhatsApp Chat
+#  Exporting WhatsApp Chat
 
 Open a chat in WhatsApp
 
@@ -85,7 +85,7 @@ Choose without media
 
 Transfer the .txt file to your PC and upload it in the app
 
-🧠 Notes:
+# Notes:
 
 Ensure the WhatsApp chat is in English or Hinglish for accurate word cloud and frequency analysis.
 
