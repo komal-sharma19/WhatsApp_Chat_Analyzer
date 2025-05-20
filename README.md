@@ -41,17 +41,17 @@ URLExtract
 
 📂 whatsapp-chat-analyzer/
 
-├── app.py                  # Main Streamlit application
+├── app.py                            # Main Streamlit application
 
-├── preprocessor.py         # Chat cleaning and preprocessing
+├── preprocessor.py                   # Chat cleaning and preprocessing
 
-├── helper.py               # All analytical and visualization functions
+├── helper.py                         # All analytical and visualization functions
 
-├── stop_hinglish.txt       # Stopword file for word cloud filtering
+├── stop_hinglish.txt                 # Stopword file for word cloud filtering
 
-├── requirements.txt        # Dependencies
+├── requirements.txt                  # Dependencies
 
-└── README.md               # Project overview and instructions
+└── README.md                          # Project overview and instructions
 
 # Setup Instructions
 
