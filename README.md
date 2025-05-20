@@ -1,5 +1,4 @@
-# WhatsApp_Chat_Analyzer_PowerBi
-📊 WhatsApp Chat Analyzer
+# WhatsApp Chat Analyzer
 A powerful and interactive web application built using Streamlit that allows users to analyze their WhatsApp chat history and gain detailed insights into messaging patterns, word usage, media sharing, emojis, and more.
 
 
