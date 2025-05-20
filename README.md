@@ -21,7 +21,8 @@ A powerful and interactive web application built using Streamlit that allows use
 
 😂 Emoji analysis with pie chart and table
 
-🛠️ Technologies Used
+🛠️ Technologies Used:
+
 Python
 
 Streamlit
@@ -52,26 +53,30 @@ URLExtract
 
 └── README.md               # Project overview and instructions
 
-📸 Screenshots
-Word Cloud	Monthly Timeline
-
 📦 Setup Instructions
+
 Clone the repository:
+
 git clone https://github.com/your-username/whatsapp-chat-analyzer.git
 
 cd whatsapp-chat-analyzer
 
 Install dependencies:
+
 pip install -r requirements.txt
 
 Run the Streamlit app:
+
 streamlit run app.py
 
 Upload your WhatsApp chat file
+
 Export the chat from WhatsApp (without media)
+
 Upload the .txt file using the sidebar in the app
 
 📋 Exporting WhatsApp Chat
+
 Open a chat in WhatsApp
 
 Tap on the three-dot menu > More > Export Chat
@@ -80,7 +85,8 @@ Choose without media
 
 Transfer the .txt file to your PC and upload it in the app
 
-🧠 Notes
+🧠 Notes:
+
 Ensure the WhatsApp chat is in English or Hinglish for accurate word cloud and frequency analysis.
 
 Currently supports exported chat from Android format. iOS format might need adjustments in preprocessing.
