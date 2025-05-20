@@ -2,7 +2,7 @@
 A powerful and interactive web application built using Streamlit that allows users to analyze their WhatsApp chat history and gain detailed insights into messaging patterns, word usage, media sharing, emojis, and more.
 
 
-🚀 Features
+#🚀 Features
 📥 Upload and parse exported WhatsApp chat .txt files
 
 👤 Analyze chat statistics for individual users or overall group
