@@ -98,11 +98,16 @@ if uploaded_file is not None:
             plt.xticks(rotation='vertical')
             st.pyplot(fig)
             
-        st.title("Weekly Activity Heatmap")
-        user_heatmap = helper.activity_heatmap(selected_user,df)
-        fig,ax=plt.subplots()
-        ax=sns.heatmap(user_heatmap)
-        st.pyplot(fig)
+        st.title("Monthly Activity Heatmap")
+        user_heatmap = helper.activity_heatmap(selected_user, df)
+
+        # Add this check!
+        if not user_heatmap.empty:
+            fig, ax = plt.subplots()
+            ax = sns.heatmap(user_heatmap)
+            st.pyplot(fig)
+        else:
+            st.info("No activity found for the selected user in this period to generate a heatmap.")
         
             
         # Finding the busiest users in the group(Group Level)
@@ -173,3 +178,4 @@ if uploaded_file is not None:
     
 
     
+
