@@ -8,13 +8,18 @@ st.sidebar.title("Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
-    # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
-    data=bytes_data.decode("utf-8")
-    df=preprocessor.preprocess(data)
-    
-    # Remove group_notification from DataFrame
-    df = df[df['user'] != 'group_notification']    
+    try:
+        data = bytes_data.decode("utf-8")
+    except UnicodeDecodeError:
+        try:
+            data = bytes_data.decode("latin-1") # Try latin-1 first
+            st.warning("File decoded with 'latin-1' encoding.")
+        except UnicodeDecodeError:
+            # If even latin-1 fails, then resort to replacing
+            data = bytes_data.decode("utf-8", errors='replace')
+            st.warning("Could not decode file with UTF-8 or Latin-1. Invalid characters replaced.")
+    df=preprocessor.preprocess(data)   
     
     # fetch unique users
     user_list=df['user'].unique().tolist()
@@ -166,4 +171,5 @@ if uploaded_file is not None:
     
     
     
+
     
