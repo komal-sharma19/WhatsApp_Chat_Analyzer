@@ -80,7 +80,7 @@ def create_wordcloud(selected_user, df):
     
     wc = WordCloud(width=500, height=500, min_font_size=10, background_color='white')
     temp['message']=temp['message'].apply(remove_stop_words)
-    df_wc=wc.generate(temp['message'].str.cat(sep=" "))
+    df_wc=wc.generate(temp['message'].astype(str).cat(sep=" "))
     return df_wc
 
 
@@ -181,4 +181,5 @@ def activity_heatmap(selected_user,df):
     
 
     
+
     
