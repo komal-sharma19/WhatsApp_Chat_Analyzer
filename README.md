@@ -79,16 +79,3 @@ whatsapp-chat-analyzer/
 
 - Ensure the WhatsApp chat is in English or Hinglish for accurate word cloud and frequency analysis.
 - Currently supports exported chat from **Android format**. iOS format might need adjustments in preprocessing.
-
----
-
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-
----
-
-## Contact
-
-For questions or feedback, please open an issue on the repository.
