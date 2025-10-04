@@ -1,88 +1,94 @@
 # WhatsApp Chat Analyzer
 A powerful and interactive web application built using Streamlit that allows users to analyze their WhatsApp chat history and gain detailed insights into messaging patterns, word usage, media sharing, emojis, and more.
 
+---
 
-# Features
-📥 Upload and parse exported WhatsApp chat .txt files
+## Features
 
-👤 Analyze chat statistics for individual users or overall group
+- 📥 **Upload and parse exported WhatsApp chat .txt files**
+- 👤 **Analyze chat statistics for individual users or overall group**
+- 🧮 **Message, word, media, and link count**
+- 📆 **Monthly and daily chat timeline visualization**
+- 📈 **User activity maps by day and month**
+- 👑 **Identify the most active users in group chats**
+- ☁️ **Generate word clouds of most used words**
+- 🔤 **List most frequently used words**
+- 😂 **Emoji analysis with pie chart and table**
 
-🧮 Message, word, media, and link count
+---
 
-📆 Monthly and daily chat timeline visualization
+## Technologies Used
 
-📈 User activity maps by day and month
+- Python
+- Streamlit
+- Matplotlib
+- Pandas
+- WordCloud
+- Emoji
+- URLExtract
 
-👑 Identify the most active users in group chats
+---
 
-☁️ Generate word clouds of most used words
+## Project Structure
 
-🔤 List most frequently used words
+```
+whatsapp-chat-analyzer/
+├── app.py                # Main Streamlit application
+├── preprocessor.py       # Chat cleaning and preprocessing
+├── helper.py             # All analytical and visualization functions
+├── stop_hinglish.txt     # Stopword file for word cloud filtering
+├── requirements.txt      # Dependencies
+└── README.md             # Project overview and instructions
+```
 
-😂 Emoji analysis with pie chart and table
+---
 
-# Technologies Used:
+## Setup Instructions
 
-Python
+1. **Navigate to the project directory:**
+   ```
+   cd whatsapp-chat-analyzer
+   ```
 
-Streamlit
+2. **Install dependencies:**
+   ```
+   pip install -r requirements.txt
+   ```
 
-Matplotlib
+3. **Run the Streamlit app:**
+   ```
+   streamlit run app.py
+   ```
 
-Pandas
+4. **Upload your WhatsApp chat file:**
+   - Export the chat from WhatsApp (without media)
+   - Upload the `.txt` file using the sidebar in the app
 
-WordCloud
+---
 
-Emoji
+## Exporting WhatsApp Chat
 
-URLExtract
+1. Open a chat in WhatsApp
+2. Tap on the three-dot menu > More > Export Chat
+3. Choose **without media**
+4. Transfer the `.txt` file to your PC and upload it in the app
 
-# Project Structure
+---
 
-📂 whatsapp-chat-analyzer/
+## Notes
 
-├── app.py                            # Main Streamlit application
+- Ensure the WhatsApp chat is in English or Hinglish for accurate word cloud and frequency analysis.
+- Currently supports exported chat from **Android format**. iOS format might need adjustments in preprocessing.
 
-├── preprocessor.py                   # Chat cleaning and preprocessing
+---
 
-├── helper.py                         # All analytical and visualization functions
+## Contributing
 
-├── stop_hinglish.txt                 # Stopword file for word cloud filtering
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-├── requirements.txt                  # Dependencies
 
-└── README.md                          # Project overview and instructions
+---
 
-# Setup Instructions
+## Contact
 
-cd whatsapp-chat-analyzer
-
-## Install dependencies:
-
-pip install -r requirements.txt
-
-## Run the Streamlit app:
-
-streamlit run app.py
-
-Upload your WhatsApp chat file
-
-Export the chat from WhatsApp (without media)
-
-Upload the .txt file using the sidebar in the app
-
-#  Exporting WhatsApp Chat
-
-Open a chat in WhatsApp
-
-Tap on the three-dot menu > More > Export Chat
-
-Choose without media
-
-Transfer the .txt file to your PC and upload it in the app
-
-# Notes:
-
-Ensure the WhatsApp chat is in English or Hinglish for accurate word cloud and frequency analysis.
-
-Currently supports exported chat from Android format. iOS format might need adjustments in preprocessing.
+For questions or feedback, please open an issue on the repository.
