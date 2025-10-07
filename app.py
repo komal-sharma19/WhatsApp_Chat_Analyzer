@@ -134,10 +134,14 @@ if uploaded_file is not None:
                 
         # WordCloud
         st.title("Wordcloud")
-        df_wc = helper.create_wordcloud(selected_user,df)
-        fig,ax = plt.subplots()
-        ax.imshow(df_wc)
-        st.pyplot(fig)
+        df_wc = helper.create_wordcloud(selected_user, df)
+
+        if df_wc:
+            fig, ax = plt.subplots()
+            ax.imshow(df_wc)
+            st.pyplot(fig)
+        else:
+            st.info("Not enough words to create a word cloud for this selection.")
             
         #most common words
         most_common_df=helper.most_common_words(selected_user,df)
